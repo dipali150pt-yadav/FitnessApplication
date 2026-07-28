@@ -1,0 +1,23 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:postgresql://localhost:5433/fitness_user_Db
+    username: postgres
+    password: pass123
+
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
